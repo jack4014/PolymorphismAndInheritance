@@ -17,32 +17,54 @@ namespace PolymorphismAndInheritance
             InitializeComponent();
         }
 
-        private double totProf(Animal [] A)
+        private double totProf(Animal [] myFarm)
         {
-            double tot = 0.0;
-            for int i=0; i < 10; i++)
+            double profit = 0;
+            foreach(Animal farm in myFarm)
             {
-
+                profit += farm.getProf();
             }
-            return (tot);
+            return profit;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Animal[] myFarm = new Animal[10];
-            for (int i = 0; i < 10; i++)
+            string line;
+            System.IO.StreamReader file = new System.IO.StreamReader(@BrowseFileTextBox.Text);
+            int i = 0;
+            while ((line = file.ReadLine()) != null)
             {
-                myFarm[i] = new Cow(i + 100, i * 23.5);
+                string[] values = line.Split(',');
+                if (values[2] == "Cow")
+                {
+                    myFarm[i] = new Cow(int.Parse(values[0]), double.Parse(values[1]));
+                }
+                else if (values[2] == "JerseyCow")
+                {
+                    myFarm[i] = new JerseyCow(int.Parse(values[0]), double.Parse(values[1]));
+                }
+                else if (values[2] == "Goat")
+                {
+                    myFarm[i] = new Goat(int.Parse(values[0]), double.Parse(values[1]));
+                }
+                i++;
             }
-            double prof = 0;
-            for (int i = 0; i < 10; i++)
-            {
-                prof += myFarm[i].getProf();
-            }
+            file.Close();
+            ProfitTextBox.Text = "$" + totProf(myFarm).ToString();
+        }
 
-            //double prof = 0.0;
-            //for (int i = 0; i < myFarm.length; i++)
-            //prof += myFarm[i].getprof();
+        private void BrowseFile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog FileDia = new OpenFileDialog();
+
+            FileDia.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            FileDia.FilterIndex = 2;
+            FileDia.RestoreDirectory = true;
+            if(FileDia.ShowDialog() == DialogResult.OK)
+            {
+                BrowseFileTextBox.Text = FileDia.FileName;
+            }
         }
     }
 }

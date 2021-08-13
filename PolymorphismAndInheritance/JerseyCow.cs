@@ -8,11 +8,15 @@ namespace PolymorphismAndInheritance
 {
     class JerseyCow: Cow
     {
-        public JerseyCow(int id, double amtMilk) : base(id, amtMilk) {; }
+        public JerseyCow(int id, double amtMilk) : base(id, amtMilk) 
+        { 
+        }
 
-        override public double getProf()
+        public override double getProf()
         {
-            return (50.0);
+            double profit;
+            profit = this.amtMilk * Prices.cowMilkPrice - Prices.jcowVaccPrice;
+            return profit;
         }
     }
 }

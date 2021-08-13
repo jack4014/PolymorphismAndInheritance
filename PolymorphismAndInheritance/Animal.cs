@@ -8,8 +8,8 @@ namespace PolymorphismAndInheritance
 {
     class Animal
     {
-        public int id;
+        public abstract Animal
         public Animal(int id) { this.id = id; }
-        public double getProf() { return (0); }
+        abstract double getProf();
     }
 }

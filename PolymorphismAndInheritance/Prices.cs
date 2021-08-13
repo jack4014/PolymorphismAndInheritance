@@ -10,5 +10,8 @@ namespace PolymorphismAndInheritance
     {
         public static double cowMilkPrice;
         public static double goatMilkPrice;
+        public static double cowVaccPrice;
+        public static double jcowVaccPrice;
+        public static double goatVaccPrice;
     }
 }

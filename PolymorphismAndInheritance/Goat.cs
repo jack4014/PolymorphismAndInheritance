@@ -10,5 +10,12 @@ namespace PolymorphismAndInheritance
     {
         public double amtMilk;
         public Goat(int id, double amtMilk) : base(id) { this.amtMilk = amtMilk; }
+
+        public override double getProf()
+        {
+            double profit;
+            profit = this.amtMilk * Prices.cowMilkPrice - Prices.goatVaccPrice;
+            return profit;
+        }
     }
 }
