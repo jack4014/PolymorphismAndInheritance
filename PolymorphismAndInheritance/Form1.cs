@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PolymorphismAndInheritance
 {
-    public partial class GoatVaccTextBox : Form
+    public partial class Form1 : Form
     {
-        public GoatVaccTextBox()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -64,7 +64,7 @@ namespace PolymorphismAndInheritance
                 i++;
             }
             file.Close();
-            ProfitTextBox.Text = "$" + totProf(myFarm).ToString();
+            GoatVaccTextBox.Text = "$" + totProf(myFarm).ToString();
         }
     }
 }
