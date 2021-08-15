@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace PolymorphismAndInheritance
 {
-    class Animal
+    abstract class Animal
     {
         public int id;
         public Animal(int id) { this.id = id; }
-        virtual public double getProf()
-        {
-            return (150);
-        }
+        abstract public double getProf();
     }
 }
