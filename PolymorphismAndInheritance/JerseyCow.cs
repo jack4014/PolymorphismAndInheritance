@@ -12,7 +12,7 @@ namespace PolymorphismAndInheritance
         { 
         }
 
-        public override double getProf()
+        override public double getProf()
         {
             double profit;
             profit = this.amtMilk * Prices.cowMilkPrice - Prices.jcowVaccPrice;

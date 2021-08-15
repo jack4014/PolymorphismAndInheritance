@@ -11,7 +11,7 @@ namespace PolymorphismAndInheritance
         public double amtMilk;
         public Cow(int id, double amtMilk) : base(id) { this.amtMilk = amtMilk; }
 
-        public override double getProf()
+        override public double getProf()
         {
             double profit;
             profit = this.amtMilk * Prices.cowMilkPrice - Prices.cowVaccPrice;

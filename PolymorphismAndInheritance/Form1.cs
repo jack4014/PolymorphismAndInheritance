@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PolymorphismAndInheritance
 {
-    public partial class Form1 : Form
+    public partial class GoatVaccTextBox : Form
     {
-        public Form1()
+        public GoatVaccTextBox()
         {
             InitializeComponent();
         }
