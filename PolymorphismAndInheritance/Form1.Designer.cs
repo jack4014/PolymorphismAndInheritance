@@ -180,7 +180,7 @@ namespace PolymorphismAndInheritance
             this.Controls.Add(this.BrowseFileTextBox);
             this.Controls.Add(this.CalculateButton);
             this.Name = "GoatVaccTextBox";
-            this.Text = "Form1";
+            this.Text = "Calculate Total Profit";
             this.ResumeLayout(false);
             this.PerformLayout();
 
