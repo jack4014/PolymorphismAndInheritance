@@ -8,7 +8,7 @@ namespace PolymorphismAndInheritance
 {
     class Goat : Animal
     {
-        public double amtMilk = 0;
+        public double amtMilk;
         public Goat(int id, double amtMilk) : base(id) { this.amtMilk = amtMilk; }
 
         override public double getProf()
