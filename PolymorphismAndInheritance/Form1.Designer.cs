@@ -1,7 +1,7 @@
 ﻿
 namespace PolymorphismAndInheritance
 {
-    partial class GoatVaccTextBox
+    partial class Forrm1
     {
         /// <summary>
         /// Required designer variable.
@@ -72,7 +72,7 @@ namespace PolymorphismAndInheritance
             // 
             // GoatVacTextBox
             // 
-            this.GoatVacTextBox.Location = new System.Drawing.Point(25, 261);
+            this.GoatVacTextBox.Location = new System.Drawing.Point(25, 252);
             this.GoatVacTextBox.Name = "GoatVacTextBox";
             this.GoatVacTextBox.Size = new System.Drawing.Size(156, 20);
             this.GoatVacTextBox.TabIndex = 4;
@@ -110,7 +110,7 @@ namespace PolymorphismAndInheritance
             // 
             // JCowVaccTextBox
             // 
-            this.JCowVaccTextBox.Location = new System.Drawing.Point(25, 211);
+            this.JCowVaccTextBox.Location = new System.Drawing.Point(25, 202);
             this.JCowVaccTextBox.Name = "JCowVaccTextBox";
             this.JCowVaccTextBox.Size = new System.Drawing.Size(156, 20);
             this.JCowVaccTextBox.TabIndex = 3;
@@ -145,7 +145,7 @@ namespace PolymorphismAndInheritance
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(22, 195);
+            this.label4.Location = new System.Drawing.Point(22, 186);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(197, 13);
             this.label4.TabIndex = 11;
@@ -154,13 +154,13 @@ namespace PolymorphismAndInheritance
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 245);
+            this.label5.Location = new System.Drawing.Point(22, 236);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(166, 13);
             this.label5.TabIndex = 12;
             this.label5.Text = "Goat Vaccination Price (Per Year)";
             // 
-            // GoatVaccTextBox
+            // Forrm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -179,7 +179,7 @@ namespace PolymorphismAndInheritance
             this.Controls.Add(this.ProfitTextBox);
             this.Controls.Add(this.BrowseFileTextBox);
             this.Controls.Add(this.CalculateButton);
-            this.Name = "GoatVaccTextBox";
+            this.Name = "Forrm1";
             this.Text = "Calculate Total Profit";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -16,7 +16,7 @@ namespace PolymorphismAndInheritance
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GoatVaccTextBox());
+            Application.Run(new Forrm1());
         }
     }
 }

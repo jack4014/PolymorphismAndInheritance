@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PolymorphismAndInheritance
 {
-    public partial class GoatVaccTextBox : Form
+    public partial class Forrm1 : Form
     {
-        public GoatVaccTextBox()
+        public Forrm1()
         {
             InitializeComponent();
         }
@@ -69,7 +69,7 @@ namespace PolymorphismAndInheritance
             Prices.cowVaccPrice = Convert.ToDouble(CowVaccTextBox.Text);
             Prices.jcowVaccPrice = Convert.ToDouble(JCowVaccTextBox.Text);
             Prices.goatVaccPrice= Convert.ToDouble(GoatVacTextBox.Text);
-            GoatVacTextBox.Text = "$" + totProf(myFarm).ToString();
+            ProfitTextBox.Text = "$" + totProf(myFarm).ToString();
         }
     }
 }
