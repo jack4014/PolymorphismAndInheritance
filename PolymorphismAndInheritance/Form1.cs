@@ -53,7 +53,7 @@ namespace PolymorphismAndInheritance
                 {
                     myFarm[i] = new Cow(int.Parse(values[0]), double.Parse(values[1]));
                 }
-                else if (values[2] == "JerseyCow")
+                else if (values[2] == "Jersey_Cow")
                 {
                     myFarm[i] = new JerseyCow(int.Parse(values[0]), double.Parse(values[1]));
                 }
@@ -64,7 +64,12 @@ namespace PolymorphismAndInheritance
                 i++;
             }
             file.Close();
-            ProfitTextBox.Text = "$" + totProf(myFarm).ToString();
+            Prices.cowMilkPrice = Convert.ToDouble(CowMilkTextBox.Text);
+            Prices.goatMilkPrice = Convert.ToDouble(GoatMilkTextBox.Text);
+            Prices.cowVaccPrice = Convert.ToDouble(CowVaccTextBox.Text);
+            Prices.jcowVaccPrice = Convert.ToDouble(JCowVaccTextBox.Text);
+            Prices.goatVaccPrice= Convert.ToDouble(GoatVacTextBox.Text);
+            GoatVacTextBox.Text = "$" + totProf(myFarm).ToString();
         }
     }
 }

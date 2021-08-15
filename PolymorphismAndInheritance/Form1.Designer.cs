@@ -31,8 +31,8 @@ namespace PolymorphismAndInheritance
         {
             this.CalculateButton = new System.Windows.Forms.Button();
             this.BrowseFileTextBox = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.ProfitTextBox = new System.Windows.Forms.TextBox();
+            this.GoatVacTextBox = new System.Windows.Forms.TextBox();
             this.GoatMilkTextBox = new System.Windows.Forms.TextBox();
             this.CowVaccTextBox = new System.Windows.Forms.TextBox();
             this.BrowseFile = new System.Windows.Forms.Button();
@@ -62,20 +62,20 @@ namespace PolymorphismAndInheritance
             this.BrowseFileTextBox.Size = new System.Drawing.Size(272, 20);
             this.BrowseFileTextBox.TabIndex = 6;
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(383, 153);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(272, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TabStop = false;
-            // 
             // ProfitTextBox
             // 
-            this.ProfitTextBox.Location = new System.Drawing.Point(25, 261);
+            this.ProfitTextBox.Location = new System.Drawing.Point(383, 153);
             this.ProfitTextBox.Name = "ProfitTextBox";
-            this.ProfitTextBox.Size = new System.Drawing.Size(156, 20);
-            this.ProfitTextBox.TabIndex = 4;
+            this.ProfitTextBox.Size = new System.Drawing.Size(272, 20);
+            this.ProfitTextBox.TabIndex = 2;
+            this.ProfitTextBox.TabStop = false;
+            // 
+            // GoatVacTextBox
+            // 
+            this.GoatVacTextBox.Location = new System.Drawing.Point(25, 261);
+            this.GoatVacTextBox.Name = "GoatVacTextBox";
+            this.GoatVacTextBox.Size = new System.Drawing.Size(156, 20);
+            this.GoatVacTextBox.TabIndex = 4;
             // 
             // GoatMilkTextBox
             // 
@@ -175,8 +175,8 @@ namespace PolymorphismAndInheritance
             this.Controls.Add(this.BrowseFile);
             this.Controls.Add(this.CowVaccTextBox);
             this.Controls.Add(this.GoatMilkTextBox);
+            this.Controls.Add(this.GoatVacTextBox);
             this.Controls.Add(this.ProfitTextBox);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.BrowseFileTextBox);
             this.Controls.Add(this.CalculateButton);
             this.Name = "GoatVaccTextBox";
@@ -190,8 +190,8 @@ namespace PolymorphismAndInheritance
 
         private System.Windows.Forms.Button CalculateButton;
         private System.Windows.Forms.TextBox BrowseFileTextBox;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox ProfitTextBox;
+        private System.Windows.Forms.TextBox GoatVacTextBox;
         private System.Windows.Forms.TextBox GoatMilkTextBox;
         private System.Windows.Forms.TextBox CowVaccTextBox;
         private System.Windows.Forms.Button BrowseFile;
