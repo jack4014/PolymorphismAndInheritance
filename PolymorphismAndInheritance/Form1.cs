@@ -27,7 +27,20 @@ namespace PolymorphismAndInheritance
             return profit;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BrowseFile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog FileDia = new OpenFileDialog();
+
+            FileDia.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            FileDia.FilterIndex = 2;
+            FileDia.RestoreDirectory = true;
+            if(FileDia.ShowDialog() == DialogResult.OK)
+            {
+                BrowseFileTextBox.Text = FileDia.FileName;
+            }
+        }
+
+        private void buttonCalculateButton_press(object sender, EventArgs e)
         {
             Animal[] myFarm = new Animal[10];
             string line;
@@ -52,19 +65,6 @@ namespace PolymorphismAndInheritance
             }
             file.Close();
             ProfitTextBox.Text = "$" + totProf(myFarm).ToString();
-        }
-
-        private void BrowseFile_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog FileDia = new OpenFileDialog();
-
-            FileDia.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
-            FileDia.FilterIndex = 2;
-            FileDia.RestoreDirectory = true;
-            if(FileDia.ShowDialog() == DialogResult.OK)
-            {
-                BrowseFileTextBox.Text = FileDia.FileName;
-            }
         }
     }
 }

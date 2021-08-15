@@ -45,17 +45,17 @@ namespace PolymorphismAndInheritance
             this.CalculateButton.Location = new System.Drawing.Point(383, 124);
             this.CalculateButton.Name = "CalculateButton";
             this.CalculateButton.Size = new System.Drawing.Size(75, 23);
-            this.CalculateButton.TabIndex = 0;
+            this.CalculateButton.TabIndex = 7;
             this.CalculateButton.Text = "Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
-            this.CalculateButton.Click += new System.EventHandler(this.button1_Click);
+            this.CalculateButton.Click += new System.EventHandler(this.buttonCalculateButton_press);
             // 
             // BrowseFileTextBox
             // 
             this.BrowseFileTextBox.Location = new System.Drawing.Point(383, 59);
             this.BrowseFileTextBox.Name = "BrowseFileTextBox";
             this.BrowseFileTextBox.Size = new System.Drawing.Size(272, 20);
-            this.BrowseFileTextBox.TabIndex = 1;
+            this.BrowseFileTextBox.TabIndex = 6;
             // 
             // textBox2
             // 
@@ -63,34 +63,35 @@ namespace PolymorphismAndInheritance
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(272, 20);
             this.textBox2.TabIndex = 2;
+            this.textBox2.TabStop = false;
             // 
             // ProfitTextBox
             // 
             this.ProfitTextBox.Location = new System.Drawing.Point(25, 261);
             this.ProfitTextBox.Name = "ProfitTextBox";
             this.ProfitTextBox.Size = new System.Drawing.Size(156, 20);
-            this.ProfitTextBox.TabIndex = 3;
+            this.ProfitTextBox.TabIndex = 4;
             // 
             // GoatMilkTextBox
             // 
             this.GoatMilkTextBox.Location = new System.Drawing.Point(25, 103);
             this.GoatMilkTextBox.Name = "GoatMilkTextBox";
             this.GoatMilkTextBox.Size = new System.Drawing.Size(156, 20);
-            this.GoatMilkTextBox.TabIndex = 4;
+            this.GoatMilkTextBox.TabIndex = 1;
             // 
             // CowVaccTextBox
             // 
             this.CowVaccTextBox.Location = new System.Drawing.Point(25, 153);
             this.CowVaccTextBox.Name = "CowVaccTextBox";
             this.CowVaccTextBox.Size = new System.Drawing.Size(156, 20);
-            this.CowVaccTextBox.TabIndex = 5;
+            this.CowVaccTextBox.TabIndex = 2;
             // 
             // BrowseFile
             // 
             this.BrowseFile.Location = new System.Drawing.Point(383, 30);
             this.BrowseFile.Name = "BrowseFile";
             this.BrowseFile.Size = new System.Drawing.Size(75, 23);
-            this.BrowseFile.TabIndex = 6;
+            this.BrowseFile.TabIndex = 5;
             this.BrowseFile.Text = "Browse File";
             this.BrowseFile.UseVisualStyleBackColor = true;
             this.BrowseFile.Click += new System.EventHandler(this.BrowseFile_Click);
@@ -100,14 +101,14 @@ namespace PolymorphismAndInheritance
             this.CowMilkTextBox.Location = new System.Drawing.Point(25, 59);
             this.CowMilkTextBox.Name = "CowMilkTextBox";
             this.CowMilkTextBox.Size = new System.Drawing.Size(156, 20);
-            this.CowMilkTextBox.TabIndex = 7;
+            this.CowMilkTextBox.TabIndex = 0;
             // 
             // JCowVaccTextBox
             // 
             this.JCowVaccTextBox.Location = new System.Drawing.Point(25, 211);
             this.JCowVaccTextBox.Name = "JCowVaccTextBox";
             this.JCowVaccTextBox.Size = new System.Drawing.Size(156, 20);
-            this.JCowVaccTextBox.TabIndex = 8;
+            this.JCowVaccTextBox.TabIndex = 3;
             // 
             // GoatVaccTextBox
             // 
