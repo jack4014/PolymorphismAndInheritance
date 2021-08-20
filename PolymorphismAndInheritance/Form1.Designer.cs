@@ -1,7 +1,7 @@
 ﻿
 namespace PolymorphismAndInheritance
 {
-    partial class Forrm1
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -61,6 +61,7 @@ namespace PolymorphismAndInheritance
             this.BrowseFileTextBox.Name = "BrowseFileTextBox";
             this.BrowseFileTextBox.Size = new System.Drawing.Size(272, 20);
             this.BrowseFileTextBox.TabIndex = 6;
+            this.BrowseFileTextBox.TextChanged += new System.EventHandler(this.BrowseFileTextBox_TextChanged);
             // 
             // ProfitTextBox
             // 
@@ -69,6 +70,7 @@ namespace PolymorphismAndInheritance
             this.ProfitTextBox.Size = new System.Drawing.Size(272, 20);
             this.ProfitTextBox.TabIndex = 2;
             this.ProfitTextBox.TabStop = false;
+            this.ProfitTextBox.TextChanged += new System.EventHandler(this.ProfitTextBox_TextChanged);
             // 
             // GoatVacTextBox
             // 
@@ -76,6 +78,7 @@ namespace PolymorphismAndInheritance
             this.GoatVacTextBox.Name = "GoatVacTextBox";
             this.GoatVacTextBox.Size = new System.Drawing.Size(156, 20);
             this.GoatVacTextBox.TabIndex = 4;
+            this.GoatVacTextBox.TextChanged += new System.EventHandler(this.GoatVacTextBox_TextChanged);
             // 
             // GoatMilkTextBox
             // 
@@ -83,6 +86,7 @@ namespace PolymorphismAndInheritance
             this.GoatMilkTextBox.Name = "GoatMilkTextBox";
             this.GoatMilkTextBox.Size = new System.Drawing.Size(156, 20);
             this.GoatMilkTextBox.TabIndex = 1;
+            this.GoatMilkTextBox.TextChanged += new System.EventHandler(this.GoatMilkTextBox_TextChanged);
             // 
             // CowVaccTextBox
             // 
@@ -90,6 +94,7 @@ namespace PolymorphismAndInheritance
             this.CowVaccTextBox.Name = "CowVaccTextBox";
             this.CowVaccTextBox.Size = new System.Drawing.Size(156, 20);
             this.CowVaccTextBox.TabIndex = 2;
+            this.CowVaccTextBox.TextChanged += new System.EventHandler(this.CowVaccTextBox_TextChanged);
             // 
             // BrowseFile
             // 
@@ -107,6 +112,7 @@ namespace PolymorphismAndInheritance
             this.CowMilkTextBox.Name = "CowMilkTextBox";
             this.CowMilkTextBox.Size = new System.Drawing.Size(156, 20);
             this.CowMilkTextBox.TabIndex = 0;
+            this.CowMilkTextBox.TextChanged += new System.EventHandler(this.CowMilkTextBox_TextChanged);
             // 
             // JCowVaccTextBox
             // 
@@ -114,6 +120,7 @@ namespace PolymorphismAndInheritance
             this.JCowVaccTextBox.Name = "JCowVaccTextBox";
             this.JCowVaccTextBox.Size = new System.Drawing.Size(156, 20);
             this.JCowVaccTextBox.TabIndex = 3;
+            this.JCowVaccTextBox.TextChanged += new System.EventHandler(this.JCowVaccTextBox_TextChanged);
             // 
             // label1
             // 
@@ -123,6 +130,7 @@ namespace PolymorphismAndInheritance
             this.label1.Size = new System.Drawing.Size(125, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Cow Milk Price (Per Litre)";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -132,6 +140,7 @@ namespace PolymorphismAndInheritance
             this.label2.Size = new System.Drawing.Size(127, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Goat Milk Price (Per Litre)";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -141,6 +150,7 @@ namespace PolymorphismAndInheritance
             this.label3.Size = new System.Drawing.Size(164, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "Cow Vaccination Price (Per Year)";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -150,6 +160,7 @@ namespace PolymorphismAndInheritance
             this.label4.Size = new System.Drawing.Size(197, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "Jersey Cow Vaccination Price (Per Year)";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -159,8 +170,9 @@ namespace PolymorphismAndInheritance
             this.label5.Size = new System.Drawing.Size(166, 13);
             this.label5.TabIndex = 12;
             this.label5.Text = "Goat Vaccination Price (Per Year)";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // Forrm1
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -179,7 +191,7 @@ namespace PolymorphismAndInheritance
             this.Controls.Add(this.ProfitTextBox);
             this.Controls.Add(this.BrowseFileTextBox);
             this.Controls.Add(this.CalculateButton);
-            this.Name = "Forrm1";
+            this.Name = "Form1";
             this.Text = "Calculate Total Profit";
             this.ResumeLayout(false);
             this.PerformLayout();

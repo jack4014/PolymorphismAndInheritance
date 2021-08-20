@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PolymorphismAndInheritance
 {
-    public partial class Forrm1 : Form
+    public partial class Form1 : Form
     {
-        public Forrm1()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -42,6 +42,8 @@ namespace PolymorphismAndInheritance
 
         private void buttonCalculateButton_press(object sender, EventArgs e)
         {
+            Dictionary<int, Animal> myFarm = new Dictionary<int, Animal>();
+
             Animal[] myFarm = new Animal[10];
             string line;
             System.IO.StreamReader file = new System.IO.StreamReader(@BrowseFileTextBox.Text);
@@ -51,15 +53,18 @@ namespace PolymorphismAndInheritance
                 string[] values = line.Split(',');
                 if (values[2] == "Cow")
                 {
-                    myFarm[i] = new Cow(int.Parse(values[0]), double.Parse(values[1]));
+                    //myFarm[i] = new Cow(int.Parse(values[0]), double.Parse(values[1]));
+                    myFarm.Add(int.Parse(values[0]), new Cow(int.Parse(values[0]), double.Parse(values[1])));
                 }
                 else if (values[2] == "Jersey_Cow")
                 {
-                    myFarm[i] = new JerseyCow(int.Parse(values[0]), double.Parse(values[1]));
+                    //myFarm[i] = new JerseyCow(int.Parse(values[0]), double.Parse(values[1]));
+                    myFarm.Add(int.Parse(values[0]), new Cow(int.Parse(values[0]), double.Parse(values[1])));
                 }
                 else if (values[2] == "Goat")
                 {
-                    myFarm[i] = new Goat(int.Parse(values[0]), double.Parse(values[1]));
+                    //myFarm[i] = new Goat(int.Parse(values[0]), double.Parse(values[1]));
+                    myFarm.Add(int.Parse(values[0]), new Cow(int.Parse(values[0]), double.Parse(values[1])));
                 }
                 i++;
             }
@@ -70,6 +75,66 @@ namespace PolymorphismAndInheritance
             Prices.jcowVaccPrice = Convert.ToDouble(JCowVaccTextBox.Text);
             Prices.goatVaccPrice= Convert.ToDouble(GoatVacTextBox.Text);
             ProfitTextBox.Text = "$" + totProf(myFarm).ToString();
+        }
+
+        private void BrowseFileTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProfitTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GoatVacTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GoatMilkTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CowVaccTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CowMilkTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void JCowVaccTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
