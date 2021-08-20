@@ -17,12 +17,12 @@ namespace PolymorphismAndInheritance
             InitializeComponent();
         }
 
-        private double totProf(Animal [] myFarm)
+        private double totProf(Dictionary<int, Animal> myFarm)
         {
             double profit = 0;
-            foreach(Animal farm in myFarm)
+            foreach(var animal in myFarm.Values)
             {
-                profit += farm.getProf();
+                profit += animal.getProf();
             }
             return profit;
         }
@@ -44,7 +44,6 @@ namespace PolymorphismAndInheritance
         {
             Dictionary<int, Animal> myFarm = new Dictionary<int, Animal>();
 
-            Animal[] myFarm = new Animal[10];
             string line;
             System.IO.StreamReader file = new System.IO.StreamReader(@BrowseFileTextBox.Text);
             int i = 0;
