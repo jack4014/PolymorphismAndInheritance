@@ -52,17 +52,14 @@ namespace PolymorphismAndInheritance
                 string[] values = line.Split(',');
                 if (values[2] == "Cow")
                 {
-                    //myFarm[i] = new Cow(int.Parse(values[0]), double.Parse(values[1]));
                     myFarm.Add(int.Parse(values[0]), new Cow(int.Parse(values[0]), double.Parse(values[1])));
                 }
                 else if (values[2] == "Jersey_Cow")
                 {
-                    //myFarm[i] = new JerseyCow(int.Parse(values[0]), double.Parse(values[1]));
                     myFarm.Add(int.Parse(values[0]), new Cow(int.Parse(values[0]), double.Parse(values[1])));
                 }
                 else if (values[2] == "Goat")
-                {
-                    //myFarm[i] = new Goat(int.Parse(values[0]), double.Parse(values[1]));
+                {                   
                     myFarm.Add(int.Parse(values[0]), new Cow(int.Parse(values[0]), double.Parse(values[1])));
                 }
                 i++;
