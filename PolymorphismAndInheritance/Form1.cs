@@ -17,7 +17,7 @@ namespace PolymorphismAndInheritance
             InitializeComponent();
         }
 
-        private double totProf(Dictionary<int, Animal> myFarm)
+        private double totProf(Dictionary<int, Animal> myFarm) //Dictionary to get the profitability 
         {
             double profit = 0;
             foreach(var animal in myFarm.Values)
@@ -27,9 +27,14 @@ namespace PolymorphismAndInheritance
             return profit;
         }
 
+        /// <summary>
+        /// Button to browse for text file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BrowseFile_Click(object sender, EventArgs e)
         {
-            OpenFileDialog FileDia = new OpenFileDialog();
+            OpenFileDialog FileDia = new OpenFileDialog(); //Open file dialog 
 
             FileDia.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
             FileDia.FilterIndex = 2;
@@ -40,9 +45,14 @@ namespace PolymorphismAndInheritance
             }
         }
 
+        /// <summary>
+        /// Button that calculates all the prices in each textboxes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonCalculateButton_press(object sender, EventArgs e)
         {
-            Dictionary<int, Animal> myFarm = new Dictionary<int, Animal>();
+            Dictionary<int, Animal> myFarm = new Dictionary<int, Animal>(); //Dictionary that contains 10 values from the text file
 
             string line;
             System.IO.StreamReader file = new System.IO.StreamReader(@BrowseFileTextBox.Text);
